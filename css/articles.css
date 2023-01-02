@@ -11,6 +11,7 @@ body header {
   width: 100%;
   top: 0;
   right: 0;
+  z-index: 9999;
 }
 html header .top-nav,
 body header .top-nav {
@@ -227,7 +228,6 @@ html main .articles article.reveal.active,
 body main .articles article.reveal.active {
   transform: translateY(0);
   opacity: 1;
-  z-index: -1;
 }
 html main .articles article .more-info,
 body main .articles article .more-info {
@@ -301,7 +301,6 @@ body footer .newslatter {
   gap: 20px;
   border-radius: 5px;
   padding-left: 15px;
-  background-image: url(/assets/germs_footer.png), url(/assets/germs_footer.png);
   background-repeat: no-repeat, no-repeat;
   background-position: right, left;
   height: 75px;
