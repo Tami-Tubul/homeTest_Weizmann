@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/assets/browser-img.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מאמרי 10K</title>
+    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/articlesMobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="index.js"></script> -->
+</head>
+
+<body>
+
+    <!---------------------------- modal------------------------->
+
+    <h2>התחברות</h2>
+
+    <div id="loginModal" class="modal">
+
+        <form class="modal-content animate" onsubmit="closeModal()">
+            <div class="imgcontainer">
+                <span onclick="closeModal()" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>שם משתמש</b></label>
+                <input type="text" placeholder="הכנס שם משתמש" name="uname" required>
+
+                <label for="psw"><b>סיסמא</b></label>
+                <input type="password" placeholder="הכנס סיסמא" name="psw" required>
+
+                <button type="submit">התחברות</button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+
+            </div>
+        </form>
+    </div>
+
+
+    <header>
+        <div class="top-nav">
+            <img class="logo" src="/assets/logo.png" width="250" alt="לוגו מכון ויצמן למדע">
+            <img class="logo" src="/assets/10K_logo.png" width="170" alt="לוגו מחקר לחיזוי מחלות">
+            <div class="actions">
+                <button class="all-about-10k">הכל על K10</button>
+                <i class="fa fa-share-alt share-icon"></i>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a class="toggle-button" href="#">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li class="nav-link nav-link-fade-up"><a href="#">מידע למשתתפים הרשומים למחקר</a></li>
+                    <li class="nav-link nav-link-fade-up"><a href="#">דוחות לדוגמא</a></li>
+                    <li class="nav-link active"><a href="#">מאמרי 10K</a></li>
+                    <li class="nav-link nav-link-fade-up"><a href="#">שאלות ותשובות</a></li>
+                    <li class="nav-link nav-link-fade-up"><a href="#">החשבון שלי</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <button id="scroll-top-btn" class="scroll-top" onclick="topFunction()">
+            ^
+        </button>
+
+        <h1>מאמרי 10K</h1>
+
+        <div class="statistics-boxes">
+
+            <div class="box participants-number">
+
+                <div class="circle">
+                    <span class="circle-num">8,029</span>
+                    <p>משתתפים במחקר</p>
+                </div>
+                <p>מספר היעד הוא 10,000</p>
+            </div>
+
+            <div class="box participants-gender">
+                <div class="male">
+                    <img src="/assets//statistics-images/male.png" width="35px">
+                    <span class="male-num">3,302</span>
+                    <p>גברים משתתפים</p>
+                </div>
+                <div class="female">
+                    <img src="/assets//statistics-images/fe-male.png" width="40px">
+                    <span class="female-num">4,727</span>
+                    <p>נשים משתתפות</p>
+                </div>
+            </div>
+
+            <div class="box details">
+                <div class="questionnaires">
+                    <img src="/assets//statistics-images/questionnaires.png" width="70px">
+                    <span class="questionnaires-num">15,238</span>
+                    <p>שאלונים שמולאו</p>
+                </div>
+                <div class="meals">
+                    <img src="/assets//statistics-images/meals.png" width="70px">
+                    <span class="meals-num">235,616</span>
+                    <p>ארוחות מתועדות</p>
+                </div>
+                <div class="documents">
+                    <img src="/assets//statistics-images/documents.png" width="70px">
+                    <span class="documents-num">37,000</span>
+                    <p>ימי תיעוד מחיישני רמת הסוכר</p>
+                </div>
+                <div class="blood-test">
+                    <img src="/assets//statistics-images/blood-test.png" width="70px">
+                    <span class="blood-num">955,000</span>
+                    <p>בדיקות דם שהועלו</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="articles">
+            <article>
+                <img src="/assets//articles-images/Art_main2.jpg">
+                <h2 class="title-article">עדכון חודשי - יולי 2020</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/DF_inside2.jpg">
+                <h2 class="title-article">עדכון חודשי - פברואר 2020</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/DG_main.jpg">
+                <h2 class="title-article">עדכון חודשי</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/EA_main.jpg">
+                <h2 class="title-article">עדכון חודשי - יולי 2020</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/MOS_main_0.jpg">
+                <h2 class="title-article">עדכון חודשי - פברואר 2020</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/ND_main.jpg">
+                <h2 class="title-article">עדכון חודשי</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/SOREK_main2.jpg">
+                <h2 class="title-article">עדכון חודשי - יולי 2020</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/Art_main2.jpg">
+                <h2 class="title-article">עדכון חודשי - פברואר 2020</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+            <article>
+                <img src="/assets//articles-images/Art_main2.jpg">
+                <h2 class="title-article">עדכון חודשי</h2>
+                <p>ליהי תורג'מן, חן פלמנבאום, כרמי דרור ולי ינור יתארחו השנה במכון במטרה לקדם שיתופי פעולה, השראה
+                    הדדית
+                    ודיאלוג בין אמנים למדענים...</p>
+                <div class="more-info">
+                    <p class="article-date">19/07/2020</p>
+                    <a class="article-link" onclick="openModal()">למאמר המלא</a>
+                </div>
+            </article>
+        </div>
+
+        <button class="more-articles">מאמרים נוספים</button>
+
+
+    </main>
+
+    <footer>
+        <div class="newslatter">
+            <h2>הירשמו לניוזלטר של 10K</h2>
+            <label for="email-input">כתבו כתובת דוא"ל</label>
+            <input id="email-input" type="email" name="email" placeholder='כתבו כתובת דוא"ל'>
+            <button class="submit-newslatter">רשמו אותי</button>
+        </div>
+
+        <hr>
+        <div class="footer-logo">
+            <img src="/assets//footer10K_logo.png" width="150" height="100">
+            <p>מכון ויצמן משקיע מאמצים רבים בדאגה לחסיון המידע. הנתונים האישיים של המשתתפים במחקר יקודדו
+                כך שזהות המשתתפים תישאר חסויה גם כאשר תוצאות המחקר יפורסמו במאמר מדעי.</p>
+            <p>מחקר זה ממומן בחלקו על ידי מענק מספר 786344 מטעם המועצה האירופית למחקר (ERC). פרופ' ערן סגל
+                משמש כיועץ ומכהן בוועדה המייעצת המדעית של חברת DayTwo. מכון ויצמן עשוי ליהנות ממסחור טכנולוגיות
+                הקשורות למחקר זה.</p>
+            <p>המחקר אושר על ידי הועדה האתית של מכון ויצמן (Weizmann IRB), בשל תרומתו הצפויה להשגת ידע
+                מדעי בסיסי ולטובת האנושות. את פרטי הועדה ניתן למצוא ב<a href="https://www.weizmann.ac.il/IRB"
+                    target="_blank">https://www.weizmann.ac.il/IRB</a></p>
+        </div>
+        <hr>
+        <div class="bottom-footer">
+            <a class="footer-logo" href="http://www.weizmann.ac.il" target="_blank"><img alt="לוגו מכון ויצמן למדע"
+                    src="/assets//logo.png" width="180"></a>
+            <div class="contact-us"><span>יצירת קשר - </span>
+                <a href="http://support.project10k.org.il" target="_blank">support@project10k.org.il</a>
+            </div>
+            <a href="https://yit.co.il/" title="Opens in a new window" target="_blank" class="ux-ui"><img
+                    alt="ux/ui YIT" src="/assets//ux_ui.png" width="70"></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

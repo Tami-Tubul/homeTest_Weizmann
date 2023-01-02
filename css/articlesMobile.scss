@@ -1,0 +1,50 @@
+$darkBlue: #070720;
+$lightBlue: #00c3d6;
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    //*******************humburger*******************//
+
+    .toggle-button {
+        display: flex !important;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .navbar-links {
+            display: block;
+            width: 50%;
+
+            ul {
+                width: 100%;
+                flex-direction: column;
+                padding: 0;
+            }
+
+            .nav-link {
+                text-align: center;
+                border-top: 1px solid $darkBlue;
+
+                a {
+                    padding: .5rem 1rem;
+
+                }
+
+                &.active {
+                    border-bottom: none;
+
+                }
+            }
+
+        }
+
+        .navbar-links:not(.open) {
+            display: none;
+        }
+
+
+    }
+}

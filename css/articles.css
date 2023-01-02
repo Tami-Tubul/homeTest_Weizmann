@@ -1,0 +1,408 @@
+html,
+body {
+  font-family: "Font Awesome Pro", sans-serif;
+  color: #070720;
+  text-align: center;
+  margin: 0;
+  /* Full-width input fields */
+}
+html header,
+body header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+html header .top-nav,
+body header .top-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #070720;
+  padding-bottom: 5px;
+}
+html header .top-nav .actions button,
+body header .top-nav .actions button {
+  background-color: #00c3d6;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 4px 9px 4px 9px;
+}
+html header .top-nav .actions .share-icon,
+body header .top-nav .actions .share-icon {
+  color: #070720;
+  background-color: #00c3d6;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+}
+html header nav .navbar-links ul,
+body header nav .navbar-links ul {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 10px 9px 0px rgba(107, 103, 103, 0.55);
+  margin: 0;
+}
+html header nav .navbar-links ul .nav-link,
+body header nav .navbar-links ul .nav-link {
+  list-style-type: none;
+  font-weight: bold;
+  padding: 20px;
+  opacity: 0.75;
+  position: relative;
+}
+html header nav .navbar-links ul .nav-link a,
+body header nav .navbar-links ul .nav-link a {
+  color: #070720;
+  text-decoration: none;
+}
+html header nav .navbar-links ul .nav-link::before,
+body header nav .navbar-links ul .nav-link::before {
+  transition: 300ms;
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid #070720;
+}
+html header nav .navbar-links ul .nav-link.active,
+body header nav .navbar-links ul .nav-link.active {
+  border-bottom: 5px solid #070720;
+}
+html header nav .navbar-links ul .nav-link-fade-up::before,
+body header nav .navbar-links ul .nav-link-fade-up::before {
+  width: 100%;
+  bottom: 5px;
+  opacity: 0;
+}
+html header nav .navbar-links ul .nav-link-fade-up:hover::before,
+body header nav .navbar-links ul .nav-link-fade-up:hover::before {
+  bottom: 0px;
+  opacity: 1;
+}
+html header nav .toggle-button,
+body header nav .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+html header nav .toggle-button .bar,
+body header nav .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+html main,
+body main {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 180px;
+}
+html main h1,
+body main h1 {
+  font-size: 5rem;
+}
+html main .statistics-boxes,
+body main .statistics-boxes {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 25% 25% 50%;
+  margin-bottom: 80px;
+  width: 95%;
+}
+html main .statistics-boxes .box,
+body main .statistics-boxes .box {
+  background-color: #00c3d6;
+  border-radius: 5px;
+  padding: 10px;
+}
+html main .statistics-boxes .participants-number,
+body main .statistics-boxes .participants-number {
+  color: white;
+  background-color: #070720;
+}
+html main .statistics-boxes .participants-number .circle,
+body main .statistics-boxes .participants-number .circle {
+  color: #070720;
+  background-color: #00c3d6;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+html main .statistics-boxes .participants-number .circle p,
+body main .statistics-boxes .participants-number .circle p {
+  margin: 0;
+}
+html main .statistics-boxes [class$=-num],
+body main .statistics-boxes [class$=-num] {
+  font-variant-numeric: normal;
+  font-size: 2.4rem;
+}
+html main .statistics-boxes .participants-gender,
+body main .statistics-boxes .participants-gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html main .statistics-boxes .participants-gender p,
+body main .statistics-boxes .participants-gender p {
+  margin: 0;
+}
+html main .statistics-boxes .details,
+body main .statistics-boxes .details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+html main .statistics-boxes .details p,
+body main .statistics-boxes .details p {
+  margin: 0;
+}
+html main .articles,
+body main .articles {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: auto auto auto;
+}
+html main .articles article,
+body main .articles article {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  border-bottom: 1px solid #00c3d6;
+}
+html main .articles article .more-info,
+body main .articles article .more-info {
+  display: flex;
+  justify-content: space-between;
+}
+html main .articles article .more-info .article-link,
+body main .articles article .more-info .article-link {
+  color: black;
+  font-weight: bold;
+  border-bottom: 7px solid #00c3d6;
+  text-decoration: none;
+  cursor: pointer;
+}
+html main .articles article .more-info .article-date,
+body main .articles article .more-info .article-date {
+  margin: 0;
+}
+html main .more-articles,
+body main .more-articles {
+  margin: 70px;
+  align-items: center;
+  background-color: #00c3d6;
+  border-radius: 5px;
+  padding: 7px 20px 7px 20px;
+  font-size: 1rem;
+  border-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+html main .scroll-top,
+body main .scroll-top {
+  color: white;
+  background-color: #070720;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  right: 2rem;
+  font-size: 36px;
+  padding-top: 8px;
+}
+html footer,
+body footer {
+  color: white;
+  background-color: #070720;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: right;
+}
+html footer a,
+body footer a {
+  color: white;
+  text-decoration: none;
+}
+html footer hr,
+body footer hr {
+  color: white;
+  margin-top: 0;
+}
+html footer .footer-logo + hr,
+body footer .footer-logo + hr {
+  width: 65%;
+}
+html footer .newslatter,
+body footer .newslatter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+  padding-left: 15px;
+  background-image: url(/assets/germs_footer.png), url(/assets/germs_footer.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right, left;
+  height: 75px;
+}
+html footer .newslatter label,
+body footer .newslatter label {
+  font-size: 0;
+}
+html footer .newslatter input,
+body footer .newslatter input {
+  height: 30px;
+  width: 20%;
+  border-radius: 10px;
+}
+html footer .newslatter button,
+body footer .newslatter button {
+  background-color: #00c3d6;
+  border-radius: 10px;
+  height: 37px;
+  width: 100px;
+}
+html footer .footer-logo,
+body footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  line-height: 23px;
+}
+html footer .footer-logo p,
+body footer .footer-logo p {
+  width: 15%;
+}
+html footer .bottom-footer,
+body footer .bottom-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+html #loginModal,
+body #loginModal {
+  /* The Modal (background) */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+  /* Set a style for all buttons */
+  /* Extra styles for the cancel button */
+  /* Center the image and position the close button */
+  /* Modal Content/Box */
+  /* The Close Button (x) */
+  /* Add Zoom Animation */
+}
+html #loginModal input[type=text],
+html #loginModal input[type=password],
+body #loginModal input[type=text],
+body #loginModal input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+html #loginModal button,
+body #loginModal button {
+  background-color: #00c3d6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+html #loginModal button:hover,
+body #loginModal button:hover {
+  opacity: 0.8;
+}
+html #loginModal .cancelbtn,
+body #loginModal .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #00c3d6;
+}
+html #loginModal .imgcontainer,
+body #loginModal .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+html #loginModal .container,
+body #loginModal .container {
+  padding: 16px;
+}
+html #loginModal .modal-content,
+body #loginModal .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 7px;
+}
+html #loginModal .close,
+body #loginModal .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+html #loginModal .close:hover,
+html #loginModal .close:focus,
+body #loginModal .close:hover,
+body #loginModal .close:focus {
+  color: #00c3d6;
+  cursor: pointer;
+}
+html #loginModal .animate,
+body #loginModal .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=articles.css.map */
