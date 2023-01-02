@@ -146,6 +146,7 @@ body {
                     opacity: 0;
                     transition: 2s all ease;
                   }
+                  
                 &.reveal.active{
                     transform: translateY(0);
                     opacity: 1;
@@ -250,6 +251,7 @@ body {
                     z-index: -1;
                   }
 
+               
                 .more-info {
                     display: flex;
                     justify-content: space-between;

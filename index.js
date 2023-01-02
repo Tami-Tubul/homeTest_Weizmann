@@ -50,7 +50,7 @@ let progressStartValue = 0,
 
 let progress = setInterval(() => {
     progressStartValue += 0.01;
-    
+
     progressValue.textContent = Math.floor(progressStartValue * 100).toLocaleString();
 
     circularProgress.style.background = `conic-gradient(#fefefe ${progressStartValue * 3.6}deg,  #070720 0deg)`
@@ -70,7 +70,7 @@ function reveal() {
         var elementTop = reveals[i].getBoundingClientRect().top;
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
+            reveals[i].classList.add("active")
         } else {
             reveals[i].classList.remove("active");
         }
