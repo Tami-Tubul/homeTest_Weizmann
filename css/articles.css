@@ -122,23 +122,62 @@ body main .statistics-boxes .box {
   border-radius: 5px;
   padding: 10px;
 }
+html main .statistics-boxes .box.reveal,
+body main .statistics-boxes .box.reveal {
+  position: relative;
+  transform: scaleY(0.2);
+  opacity: 0;
+  transition: 2s all ease;
+}
+html main .statistics-boxes .box.reveal.active,
+body main .statistics-boxes .box.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: -1;
+}
 html main .statistics-boxes .participants-number,
 body main .statistics-boxes .participants-number {
   color: white;
   background-color: #070720;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
 }
-html main .statistics-boxes .participants-number .circle,
-body main .statistics-boxes .participants-number .circle {
-  color: #070720;
-  background-color: #00c3d6;
-  width: 200px;
-  height: 200px;
+html main .statistics-boxes .participants-number .circular-progress,
+body main .statistics-boxes .participants-number .circular-progress {
+  position: relative;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
-  margin: 0 auto;
+  background: conic-gradient(#fefefe 3.6deg, #070720 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
-html main .statistics-boxes .participants-number .circle p,
-body main .statistics-boxes .participants-number .circle p {
-  margin: 0;
+html main .statistics-boxes .participants-number .circular-progress::before,
+body main .statistics-boxes .participants-number .circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: #00c3d6;
+}
+html main .statistics-boxes .participants-number .circular-progress .progress-value,
+body main .statistics-boxes .participants-number .circular-progress .progress-value {
+  position: relative;
+  font-size: 40px;
+  color: #070720;
+}
+html main .statistics-boxes .participants-number .current-val-text,
+body main .statistics-boxes .participants-number .current-val-text {
+  z-index: 0;
+  color: #070720;
+  font-size: 0.8rem;
 }
 html main .statistics-boxes [class$=-num],
 body main .statistics-boxes [class$=-num] {
@@ -180,7 +219,7 @@ body main .articles article {
 html main .articles article.reveal,
 body main .articles article.reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: scaleY(0.2);
   opacity: 0;
   transition: 2s all ease;
 }

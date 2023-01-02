@@ -41,6 +41,24 @@ window.onclick = function (event) {
 
 //*************progress circle***************/
 
+let circularProgress = document.querySelector(".circular-progress")
+let progressValue = document.querySelector(".progress-value")
+
+let progressStartValue = 0,
+    progressEndValue = 100,
+    speed = 1;
+
+let progress = setInterval(() => {
+    progressStartValue += 0.01;
+    
+    progressValue.textContent = Math.floor(progressStartValue * 100).toLocaleString();
+
+    circularProgress.style.background = `conic-gradient(#fefefe ${progressStartValue * 3.6}deg,  #070720 0deg)`
+
+    if (progressValue.textContent == "8,029")
+        clearInterval(progress);
+
+}, speed)
 
 
 //******************animated articles***************/

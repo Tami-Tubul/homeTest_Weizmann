@@ -140,24 +140,63 @@ body {
                 border-radius: 5px;
                 padding: 10px;
 
+                &.reveal{
+                    position: relative;
+                    transform: scaleY(0.2);
+                    opacity: 0;
+                    transition: 2s all ease;
+                  }
+                &.reveal.active{
+                    transform: translateY(0);
+                    opacity: 1;
+                    z-index: -1;
+                  }
+
             }
 
             .participants-number {
                 color: white;
                 background-color: $darkBlue;
+                display: flex;
+                row-gap: 10px;
+                flex-direction: column;
+                align-items: center;
+                z-index: -1;
 
-                .circle {
-                    color: $darkBlue;
-                    background-color: $lightBlue;
-                    width: 200px;
-                    height: 200px;
+                .circular-progress{
+                    position: relative;
+                    height: 180px;
+                    width: 180px;
                     border-radius: 50%;
-                    margin: 0 auto;
+                    background: conic-gradient(#fefefe 3.6deg, $darkBlue 0deg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-content: center;
 
-                    p {
-                        margin: 0;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 170px;
+                        width: 170px;
+                        border-radius: 50%;
+                        background-color: $lightBlue;
                     }
+                    .progress-value{
+                        position: relative;
+                        font-size: 40px;
+                        color: $darkBlue;
+                    }
+
+                  
                 }
+                .current-val-text{
+                    z-index: 0;
+                    color: $darkBlue;
+                    font-size: 0.8rem;
+                }
+
             }
 
             [class $='-num'] {
@@ -201,7 +240,7 @@ body {
 
                 &.reveal{
                     position: relative;
-                    transform: translateY(150px);
+                    transform: scaleY(0.2);
                     opacity: 0;
                     transition: 2s all ease;
                   }
@@ -451,7 +490,6 @@ body {
     }
 
 
-    //****************progress circle****************//
 
 
 
