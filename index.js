@@ -45,15 +45,16 @@ let circularProgress = document.querySelector(".circular-progress")
 let progressValue = document.querySelector(".progress-value")
 
 let progressStartValue = 0,
-    progressEndValue = 100,
+    progressEndValue = 10000,
     speed = 1;
 
 let progress = setInterval(() => {
-    progressStartValue += 0.01;
+    
+    progressStartValue < 8000  ? progressStartValue += 10 : progressStartValue += 1;
 
-    progressValue.textContent = Math.floor(progressStartValue * 100).toLocaleString();
+    progressValue.textContent = Math.floor(progressStartValue).toLocaleString();
 
-    circularProgress.style.background = `conic-gradient(#fefefe ${progressStartValue * 3.6}deg,  #070720 0deg)`
+    circularProgress.style.background = `conic-gradient(#fefefe ${progressStartValue * 0.036}deg,  #070720 0deg)`
 
     if (progressValue.textContent == "8,029")
         clearInterval(progress);
