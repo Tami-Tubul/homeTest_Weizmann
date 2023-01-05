@@ -14,7 +14,7 @@ body {
         top: 0;
         right: 0;
         z-index: 9999;
-        
+
         .top-nav {
             display: flex;
             justify-content: space-around;
@@ -113,11 +113,11 @@ body {
                     border-radius: 10px;
                 }
             }
-          
+
         }
     }
 
-   
+
 
     main {
         margin-left: 15%;
@@ -141,18 +141,18 @@ body {
                 border-radius: 5px;
                 padding: 10px;
 
-                &.reveal{
+                &.reveal {
                     position: relative;
                     transform: scaleY(0.2);
                     opacity: 0;
                     transition: 2s all ease;
-                  }
-                  
-                &.reveal.active{
+                }
+
+                &.reveal.active {
                     transform: translateY(0);
                     opacity: 1;
                     z-index: -1;
-                  }
+                }
 
             }
 
@@ -165,7 +165,7 @@ body {
                 align-items: center;
                 z-index: -1;
 
-                .circular-progress{
+                .circular-progress {
                     position: relative;
                     height: 180px;
                     width: 180px;
@@ -177,7 +177,7 @@ body {
                     flex-wrap: wrap;
                     align-content: center;
 
-                    &::before{
+                    &::before {
                         content: "";
                         position: absolute;
                         height: 170px;
@@ -185,15 +185,17 @@ body {
                         border-radius: 50%;
                         background-color: $lightBlue;
                     }
-                    .progress-value{
+
+                    .progress-value {
                         position: relative;
                         font-size: 40px;
                         color: $darkBlue;
                     }
 
-                  
+
                 }
-                .current-val-text{
+
+                .current-val-text {
                     z-index: 0;
                     color: $darkBlue;
                     font-size: 0.8rem;
@@ -240,18 +242,20 @@ body {
                 text-align: right;
                 border-bottom: 1px solid $lightBlue;
 
-                &.reveal{
+                &.reveal {
                     position: relative;
                     transform: scaleY(0.2);
                     opacity: 0;
                     transition: 2s all ease;
-                  }
-                &.reveal.active{
+                }
+
+                &.reveal.active {
                     transform: translateY(0);
                     opacity: 1;
-                    
-                  }
-               
+
+                }
+
+
                 .more-info {
                     display: flex;
                     justify-content: space-between;
@@ -488,7 +492,7 @@ body {
             }
         }
 
-        
+
     }
 
 
